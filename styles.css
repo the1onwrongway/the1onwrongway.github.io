@@ -5,13 +5,14 @@ h1 {
     color: lightgrey;
 }
 img {
-    width : "350"; 
-    height: "350";
     border: 2px solid dodgerblue;
 }
 h3 {
     color: lightgrey;
 }
 p {
+    color: lightgrey;
+}
+h3 {
     color: lightgrey;
 }
