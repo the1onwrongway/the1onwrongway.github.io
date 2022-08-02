@@ -1,18 +1,17 @@
 body {
-    background-color: rgba(60, 60, 60, 0.9);
+    background-image: url('image/BG.png');
+    background-size: cover;
 }
 h1 {
-    color: lightgrey;
-}
-img {
-    border: 2px solid dodgerblue;
-}
-h3 {
-    color: lightgrey;
-}
-p {
-    color: lightgrey;
+    color: black;
 }
 h4 {
-    color: lightgrey;
+    color: black;
+}
+p {
+    color: black;
+    font-family: 'Courier New';
+}
+h4 {
+    color: black;
 }
