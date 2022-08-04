@@ -1,6 +1,11 @@
 body {
-    background-image: url('image/BG.png');
     background-size: cover;
+    font-family: 'Lato', Arial, sans-serif;
+    color: #434343;
+    background: #DAE3E7;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 h1 {
     color: black;
@@ -10,7 +15,6 @@ h4 {
 }
 p {
     color: black;
-    font-family: 'Courier New';
 }
 h4 {
     color: black;
