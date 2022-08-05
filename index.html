@@ -9,18 +9,27 @@
     <meta name="description" content = "Milan Macwan home page">
     <meta name = "author" content="Milan Gabriel Macwan">
     <link rel = "shortcut icon" href="mil.ico">
+
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     
+    <!--FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.js"></script>
 
     <!-- Style CSS-->
     <link id ='theme-style' rel = "stylesheet" href="styles.css">
 
-    <!--FontAwesome JS-->
-    <script defer src="assets/fontawesome/js/all.js"></script>
-
     <!-- Global CSS -->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+
+    <!-- github calendar css -->
+    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar-responsive.css">
+    <!-- github activity css -->  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">  
+    <link rel="stylesheet" href="assets/plugins/github-activity/src/github-activity.css">
+
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
 
 </head>
 <body >
@@ -44,17 +53,92 @@
                     </div><!--Profile-->
                 </div><!--col-->
                 <div class ="col-12 col-md-auto">
-    <h1>Hi, thank you for invading my space!</h1>
+                <div class = "dark-mode-switch d-flex">
+                    <div class="form-check form-switch mx-auto mx-md-0">
+                        <input type="checkbox " class="form-check-input me-2" id="darkswitch" >
+                        <label class="custom-control-label" for="darkswitch">Dark Mode</label>
+                    </div>
+                    <a class="btn btn-cta-primary" href="mailto:the1onwrongway@gmail.com" target="_blank"><i class="fas fa-paper-plane"></i>Contact Me</a>
+                </div><!--/col-->
+            </div><!--/row-->
+        </div><!--/container-->
+    </header><!--/header-->
 
-<h4>Hello and Welcome to my page here. I am Milan Macwan, an aspiring data scientist. </h4>
-<p>
-    I am a Mechanical Engineer by qualification, <br>
-    Corporate Leader  by profession, <br>
-    And a Data Visualization Aficionado & Analytical Reconteur by passion.<br></p>
-</p>
-<h4>
-    <button onclick="document.location='mailto:the1onwrongway@gmail.com'" target="_blank" title="Email Milan"> Email </a> </button> <br>
-    
-</h4>
+    <div class="container sections-wrapper py-5">
+        <div class="row">
+         <div class="primary col-lg-8 col-12">
+            <section class="about section">
+                <div class="section-inner shadow-sm rounded">
+                    <h2 class="heading">About Me</h2>
+                    <div class="Content">
+                        <p> Hello and Welcome to my page here. I am Milan Macwan, an aspiring data scientist. I am a Mechanical Engineer by qualification,                            Corporate Leader  by profession, & a Data Visualization Aficionado & Analytical Reconteur by passion.
+                        </p>
+                    </div><!--/content-->
+                </div><!--/section-inner-->
+            </section><!--/section-->
+             
+            <section class="latest section">
+                <div class="section-inner shadow-sm rounded">
+                    <h2 class="heading">Latest Projects</h2>
+                <div class = "content">
+
+                        <div class="item featured text-center">
+
+                            <div class="featured-image has-ribbon">
+                                <a href="https://www.kaggle.com/code/milangabriel/ipl-eda-data-analysis/notebook" target="_blank">
+                                <img class="img-fluid project-image rounded shadow-sm" src="https://www.insidesport.in/wp-content/uploads/2020/08/IPL.gif?w=690" alt="IPL EDA & Data Analysis" />
+                                </a>
+                                <div class="ribbon">
+                                <div class="text">New</div>
+                                </div>
+                            </div>
+                            <h3 class="title mb-3"><a href="https://www.kaggle.com/code/milangabriel/ipl-eda-data-analysis/notebook" target="_blank">Launch - IPL EDA</a></h3>
+
+                            <div class="desc text-start">
+                                <p>Exploratory Data Analysis on IPL ball-by-ball dataset spanning over 12 years, a perfect example of how a picture speaks a thousand words! </p>
+                            </div><!--desc-->
+                            <a class="btn btn-cta-primary" href="https://www.kaggle.com/code/milangabriel/ipl-eda-data-analysis/comments" target="_blank"><i class="fas fa-thumbs-up"></i>Back my Project</a>
+                        </div><!--item-->
+                        <hr class="divider"/>
+                        <div class="item row">
+                            <a class="col-md-4 col-12" href="https://www.kaggle.com/code/milangabriel/loan-default-probability-prediction" target="_blank">
+                            <img class="img-fluid project-name rounded shadow-sm" src="https://teamworkscolorado144186428.files.wordpress.com/2020/03/money.jpg" target="_blank">
+                            </a>
+                        <div class="desc col-md-8 col-12">
+                            <h3 class="title"><a href="https://www.kaggle.com/code/milangabriel/loan-default-probability-prediction" target="_blank">Loan Default Probability Prediction</h3></a>
+                            <p class="mb-2"> Security for banks while lending money is a must, this model helps identify probability of an individual's loan default chances.</p>
+                            <p><a class="more link" href="https://www.kaggle.com/code/milangabriel/loan-default-probability-prediction" target="_blank"> <i class="fas fa-external-link-alt"></i>Find Out More</a></p>
+                        </div><!--/desc-->
+                        </div><!--/item row-->
+                </div><!--/content-->
+            </div><!--/section inner-->
+            </section> <!--section -->
+            <section class="experience section">
+                <div class="section-inner shadow-sm rounded">
+                <h2 class="heading">Work Experience</h2>
+                <div class="content">
+                    <div class="item">
+                        <h3 class="title">Team Lead Pricing & Tender<span class="place"><a href="https://www.linkedin.com/company/bns-group-believe-in-us/mycompany/">B&S Group </a></span><span class="year">(2021-Present)</span></h3>
+                        <p> Managing a team of pricing executives to analyze ever changing market pricing strategy and assisting the buying team by providing them with market intelligence from a sales perspective to anticipate price change at retail and wholesale depending on product shortages in UK markets.Implementing sales strategies and regular marketing campaigns to maintain value of stock held within required targets, improve customer service and product offer while maximising sales.</p>
+                    </div><!--/item-->
+                    <div class="item">
+                        <h3 class="title">Pricing Excecutive<span class="place"><a href="https://www.linkedin.com/company/bns-group-believe-in-us/mycompany/">B&S Group </a></span><span class="year">(2018-2021)</span></h3>
+                        <p> Design, maintain and manage prices of range of pharmaceutical products, for retail, wholesale, trader, web, broadband customers.</p>
+                    </div><!--/item-->
+                    <div class="item">
+                        <h3 class="title">Web Sales Executives<span class="place"><a href="https://www.linkedin.com/company/bns-group-believe-in-us/mycompany/">B&S Group </a></span><span class="year">(2017-2018)</span></h3>
+                        <p> Handling customer queries and carrying out various practices to increase spend of web, broadband and tender customers.</p>
+                    </div><!--/item-->
+                    <div class="item">
+                        <h3 class="title">TeleSales Executives<span class="place"><a href="https://www.linkedin.com/company/bns-group-believe-in-us/mycompany/">B&S Group </a></span><span class="year">(2016-2017)</span></h3>
+                        <p> Generating sales, informing customers of our range of offerings, which required the skills of negotiating and communication.I have had been a part of outbound as well as inbound sales team.</p>
+                    </div><!--/item-->
+                </div><!--/content-->
+                </div><!--/section inner-->
+            </section><!--/section-->
+            
+        </div><!--/primary col-->
+         </div><!--/row-->
+    </div><!--/container sections-wrapper-->
 </body>
 </html>
