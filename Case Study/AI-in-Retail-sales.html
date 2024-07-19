@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 20px;
-            background-color: #f8f9fa;
+            background-color: #FFFFFF;
             color: #333;
         }
         h1, h2, h3 {
@@ -17,7 +17,7 @@
         }
         .content {
             max-width: 800px;
-            margin: 0 auto;
+            margin: 60px auto 0 auto; /* Adjusted top margin to account for fixed header */
         }
         .section {
             margin-bottom: 40px;
@@ -33,9 +33,48 @@
             list-style: disc;
             margin-left: 20px;
         }
+        /* Nav and fixed header styles */
+        #nav {
+            position: fixed;
+            top: 50px;
+            left: 0;
+            right: 0;
+            background: #f8f8f8;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 10px 20px;
+            z-index: 1000;
+        }
+        #nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        #nav ul li {
+            display: inline;
+        }
+        #nav ul li a {
+            text-decoration: none;
+            color: #0056b3;
+            padding: 10px;
+        }
+        .fixed-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 20px;
+            z-index: 1000;
+        }
     </style>
 </head>
 <body>
+    <div class="fixed-header">Milan Gabriel Macwan</div>
+    
     <div class="content">
         <h1>AI in Retail</h1>
 
@@ -58,23 +97,30 @@
 
         <div class="section">
             <h2>AI Implementation Strategies</h2>
-
-            <h3>Personalized Product Recommendations</h3>
-            <p>We employed advanced algorithms like collaborative and content-based filtering to analyse petabytes of customer and transaction data, including order history and purchasing behaviour.</p>
-            <p>Developing a real-time machine learning engine that delivers personalized upsell and cross-sell suggestions directly to customers through the web or mobile apps.</p>
-
-            <h3>Curated Product Listings</h3>
-            <p>Using machine learning algorithms to track onsite behaviour and real-time data points, we successfully personalized the recommendations across their 30+ product categories.</p>
-            <p>We presented products in a way that aligned with customer preferences, including "Most Popular in this Category" and "Trending in this Category" suggestions to boost conversions.</p>
-
-            <h3>Dynamic Search Results</h3>
-            <p>We implemented NLP, machine learning, and collaborative filtering to generate tailored search outcomes based on customer queries, browsing behaviour, and purchase history.</p>
-            <p>Enhancing the search experience with smart autocomplete and eliminating zero-result pages to increase engagement and conversion potential.</p>
-
-            <h3>Inventory Predictions</h3>
-            <p>We utilized machine learning to improve inventory predictions based on multiple data sources, including product velocity, seasonality, and supply chain trends.</p>
-            <p>This allows customers to see low-stock or out-of-stock notifications during their shopping journey, improving order fulfilment rates.</p>
+        
+            <div style="overflow: hidden;"> <!-- Clearfix to contain floated elements -->
+                <img src="/Case Study/image_2.png" alt="Description of Image" style="float: right; margin-left: 20px; width: 60%; max-width: 500px;">
+        
+                <div>
+                    <h3>Personalized Product Recommendations</h3>
+                    <p>They employed advanced algorithms like collaborative and content-based filtering to analyse petabytes of customer and transaction data, including order history and purchasing behaviour.</p>
+                    <p>Developing a real-time machine learning engine that delivers personalized upsell and cross-sell suggestions directly to customers through the web or mobile apps.</p>
+        
+                    <h3>Curated Product Listings</h3>
+                    <p>Using machine learning algorithms to track onsite behaviour and real-time data points, They successfully personalized the recommendations across their 30+ product categories.</p>
+                    <p>They presented products in a way that aligned with customer preferences, including "Most Popular in this Category" and "Trending in this Category" suggestions to boost conversions.</p>
+        
+                    <h3>Dynamic Search Results</h3>
+                    <p>They implemented NLP, machine learning, and collaborative filtering to generate tailored search outcomes based on customer queries, browsing behaviour, and purchase history.</p>
+                    <p>Enhancing the search experience with smart autocomplete and eliminating zero-result pages to increase engagement and conversion potential.</p>
+        
+                    <h3>Inventory Predictions</h3>
+                    <p>They utilized machine learning to improve inventory predictions based on multiple data sources, including product velocity, seasonality, and supply chain trends.</p>
+                    <p>This allows customers to see low-stock or out-of-stock notifications during their shopping journey, improving order fulfilment rates.</p>
+                </div>
+            </div>
         </div>
+        
 
         <div class="section">
             <h2>Outcomes</h2>
@@ -89,7 +135,7 @@
 
         <div class="section">
             <h2>AI Use Cases in the Retail Industry</h2>
-            <p>Thanks to artificial intelligence (AI) integration, the retail industry is witnessing a paradigm shift. This technology is automating mundane tasks and reshaping retail operations, customer interactions, and business models. Below, we explore significant AI use cases in retail, highlighting their impact and benefits.</p>
+            <p>Thanks to artificial intelligence (AI) integration, the retail industry is witnessing a paradigm shift. This technology is automating mundane tasks and reshaping retail operations, customer interactions, and business models. Below, They explore significant AI use cases in retail, highlighting their impact and benefits.</p>
 
             <h3>1. Personalized Product Recommendations</h3>
             <p>AI systems analyse customer data, such as purchase history, browsing behaviour, and preferences, to offer personalized product recommendations. This enhances the shopping experience by making it more relevant and engaging. By closely aligning offerings with individual customer needs, it also increases sales and customer loyalty.</p>
@@ -127,6 +173,14 @@
             <h3>12. Augmented Analytics</h3>
             <p>Augmented analytics employ AI to sift through data, identifying trends, patterns, and insights that can inform business decisions. This tool enables online retail companies to quickly adapt to market changes, optimize operations, and tailor offerings to meet emerging customer needs.</p>
         </div>
+        <div class="section">
+            <h2>Essential technology stack for retail AI implementation</h2>
+        
+            <div style="overflow: hidden; text-align: center; margin-bottom: 20px;">
+                <img src="/Case Study/image_3.png" alt="Description of Image" style="display: block; margin: 0 auto; width: 60%; max-width: 500px;">
+            </div>
+        </div>
+        
     </div>
 </body>
 </html>
