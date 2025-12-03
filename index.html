@@ -1,309 +1,364 @@
-<!DOCTYPE HTML>
-<html>
+/* --- Global Resets & Variables --- */
+:root {
+    --primary-color: #0078d4; /* Azure Blue style */
+    --secondary-color: #2b3c4e;
+    --bg-light: #f4f7f9;
+    --text-dark: #333;
+    --text-light: #666;
+    --white: #ffffff;
+    --max-width: 1100px;
+}
 
-<head>
-	<title>Milan Gabriel Macwan</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript>
-	<link rel="shortcut icon" href="images/milan.ico">
-</head>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-<body class="is-preload">
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--white);
+}
 
-	<!-- Wrapper -->
-	<div id="wrapper" class="fade-in">
+h1, h2, h3, h4 {
+    line-height: 1.2;
+    color: var(--secondary-color);
+}
 
-		<!-- Intro -->
-		<div id="intro">
-			<h1>Milan Gabriel Macwan</h1>
-			<p>An Explorer, A Detective and An Artist - All Rolled into one!</br>
-				<a href="https://www.linkedin.com/in/milan-gabriel/" target="_blank">@the1onwrongway</a>.
-			</p>
-			<ul class="actions">
-				<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-			</ul>
-		</div>
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
 
-		<!-- Header -->
-		<header id="header">
-			<a href="index.html" class="logo">Milan Gabriel</a>
-		</header>
+ul {
+    list-style: none;
+}
 
-		<!-- Nav -->
-		<nav id="nav">
-			<ul class="links">
-				<li class="active"><a href="index.html">Latest</a></li>
-				<!--
-				<li><a href="generic.html">Generic Page</a></li>
-				<li><a href="elements.html">Elements Reference</a></li>
-				//-->
+/* --- Utility Classes --- */
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
-			</ul>
-			<ul class="icons">
-				<!--
-				<li><a href="/Case Study/AI-in-Retail-sales.html" target="_blank" class="icon brands fa-readme"><span
-					class="label">Case Study</span></a></li>
-				//-->
-				<li><a href="https://twitter.com/The01onwrongway" target="_blank" class="icon brands fa-twitter"><span
-							class="label">Twitter</span></a></li>
-				<li><a href="https://www.facebook.com/iamgabbar.ml" target="_blank" class="icon brands fa-facebook-f"><span
-							class="label">Facebook</span></a></li>
-				<li><a href="https://www.linkedin.com/in/milan-gabriel/" target="_blank" class="icon brands fa-linkedin"><span
-							class="label">LinkedIn</span></a></li>
-				<li><a href="https:/www.instagram.com/the1onwrongway/?hl=en" target="_blank" class="icon brands fa-instagram"><span
-							class="label">Instagram</span></a></li>
-				<li><a href="https://github.com/the1onwrongway" target="_blank" class="icon brands fa-github"><span
-							class="label">GitHub</span></a></li>
-				<li><a href="https://www.kaggle.com/milangabriel" target="_blank" class="icon brands fa-kaggle"><span
-							class="label">kaggle</span></a></li>
-				<li><a href="https://bit.ly/telangana_project" target="_blank" class="icon brands fa-youtube"><span
-								class="label">YouTube</span></a></li>
-	
-			</ul>
-		</nav>
+.smaller-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
 
-		<!-- Main -->
-		<div id="main">
+.section-pad {
+    padding: 80px 0;
+}
 
-			<!-- Featured Post -->
-			<article class="post featured">
-				<header class="major">
+.bg-light {
+    background-color: var(--bg-light);
+}
 
-					<h2><a href="https://bit.ly/the1onwrongway">Milan Gabriel Macwan</a></h2>
-					<p>Trained as a Mechanical Engineer<br />
-						Analysis Manager by Profession<br />
-						& a self taught Data Analyst & Aspiring Data Scientist.</p>
-						<!-- Add this block where you want the button to appear -->
-						<ul class="actions special">
-							<li><a href="https://app-triplan.github.io/app-triplan/" class="button large" target="_blank">Visit Triplan App</a></li>
-							<li><a href="https://gabmetrix.github.io/" class="button large" target="_blank">Visit Gabmetrix</a></li>
-						</ul>
-				</header>
-				<a href="#" class="image main"><img src="images/TOP0.jpeg" alt="" /></a>
-				<ul class="actions special">
-					<li><a href="https://www.linkedin.com/in/milan-gabriel/" class="button large">LinkedIn</a></li>
-					<li><a href="https://www.kaggle.com/milangabriel/" class="button large">Kaggle</a></li>
-					<li><a href="https://github.com/the1onwrongway" class="button large">GitHub</a></li>
-					<li><a href="https://bit.ly/telangana_project" class="button large">YouTube</a></li>
-				</ul>
-			</article>
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
 
-			<!-- Posts -->
-			<section class="posts">
-				<article>
-					<header>
-						<span class="date">Jun 2024</span>
-						<h2><a href="/Case Study/AI-in-Retail-sales.html"
-								target="_blank">AI in Sales</a></h2>
-					</header>
-					<a href="/Case Study/AI-in-Retail-sales.html" target="_blank"
-						class="image fit"><img
-							src="https://img.freepik.com/free-vector/ai-financial-management-people-use-artificial-intelligence-effective-use-money-online-robotic-with-innovative-technologies-help-financiers-automate-banking-payments-deposits-transfers_88138-1410.jpg?w=1480&t=st=1721372130~exp=1721372730~hmac=8ec86948c442e274ad794b940f682722956828eb3bdc0ecc84f8eee53c120e6d"
-							alt="" /></a>
-					<p>Implementation strategy and areas of focus for AI in consumer goods sales domain</p>
-					<ul class="actions special">
-						<li><a href="/Case Study/AI-in-Retail-sales.html"
-								target="_blank" class="button">Full Story</a></li>
-					</ul>
-				</article>
-				<article>
-					<header>
-						<span class="date">Apr 2024</span>
-						<h2><a href="https://bit.ly/milan_IPL_YT"
-								target="_blank">🏏✨IPL 2024 Predictions</a></h2>
-					</header>
-					<a href="https://bit.ly/milan_IPL" target="_blank"
-						class="image fit"><img src="https://assets.bcci.tv/watermarkoutput/bcci/photos/1456/22b939a7-cc6d-49ad-b254-952129365bb3.jpg"
-							alt="IPL EDA & Data Analysis" /></a>
-					<p>Unveiling the Winning Edge: My Deep Dive into IPL 2024 Predictions and Analysis!</p>
-					<ul class="actions special">
-						<li><a href="https://bit.ly/Milan_CBRPC_IPL_GitHub"
-								target="_blank" class="button">Full Story</a></li>
-					</ul>
-				</article>
-				<article>
-					<header>
-						<span class="date">Sep 2023</span>
-						<h2><a href="https://bit.ly/telangana_project"
-								target="_blank">Telangana - It's All in It!</a></h2>
-					</header>
-					<a href="https://bit.ly/telangana_project" target="_blank"
-						class="image fit"><img src="/images/telangana.png"
-							alt="IPL EDA & Data Analysis" /></a>
-					<p>Unlocking Telangana's Economic Potential: Data-Driven Insights and Recommendations for Growth</p>
-					<ul class="actions special">
-						<li><a href="https://www.kaggle.com/code/milangabriel/ipl-eda-data-analysis/notebook"
-								target="_blank" class="button">Full Story</a></li>
-					</ul>
-				</article>
-				<article>
-					<header>
-						<span class="date">June 2021</span>
-						<h2><a href="https://www.kaggle.com/code/milangabriel/ipl-eda-data-analysis/notebook"
-								target="_blank">Exploratory Data Analysis</a></h2>
-					</header>
-					<a href="https://www.kaggle.com/code/milangabriel/ipl-eda-data-analysis/notebook" target="_blank"
-						class="image fit"><img src="https://www.insidesport.in/wp-content/uploads/2020/08/IPL.gif?w=690"
-							alt="IPL EDA & Data Analysis" /></a>
-					<p>Data Visualization using MatPlotLib in Python on IPL ball-by-ball dataset.</p>
-					<ul class="actions special">
-						<li><a href="https://www.kaggle.com/code/milangabriel/ipl-eda-data-analysis/notebook"
-								target="_blank" class="button">Full Story</a></li>
-					</ul>
-				</article>
-				<article>
-					<header>
-						<span class="date">August 2021</span>
-						<h2><a href="https://www.kaggle.com/code/milangabriel/loan-default-probability-prediction"
-								target="_blank">Probability Prediction</h2>
-					</header>
-					<a href="https://www.kaggle.com/code/milangabriel/loan-default-probability-prediction"
-						target="_blank" class="image fit"><img
-							src="https://teamworkscolorado144186428.files.wordpress.com/2020/03/money.jpg"
-							target="_blank" /></a>
-					<p> Security for banks while lending money is a must, this model helps identify probability of an
-						individual's loan default chances.</p>
-					<ul class="actions special">
-						<li><a href="https://www.kaggle.com/code/milangabriel/loan-default-probability-prediction"
-								target="_blank" class="button">Full Story</a></li>
-					</ul>
-				</article>
-				<article>
-					<header>
-						<span class="date">Jan 2022</span>
-						<h2><a href="https://www.kaggle.com/code/milangabriel/churn-prediction-with-92-accuracy/notebook"
-								target="_blank">Customer Churn Prediction</h2>
-					</header>
-					<a href="https://www.kaggle.com/code/milangabriel/churn-prediction-with-92-accuracy/notebook"
-						target="_blank" class="image fit"><img
-							src="/images/churn.jpg"
-							alt="" /></a>
-					<p>Customer churn is a key predictor of the long term success or failure of a business. But when it
-						comes to all this data, what's the best model to use?</p>
-					<ul class="actions special">
-						<li><a href="https://www.kaggle.com/code/milangabriel/churn-prediction-with-92-accuracy/notebook"
-								target="_blank" class="button">Full Story</a></li>
-					</ul>
-				</article>
-				<article>
-					<header>
-						<span class="date">Feb 2022</span>
-						<h2><a href="https://www.kaggle.com/code/milangabriel/london-housing-data-analysis"
-								target="_blank">London Housing Data Analysis</a></h2>
-					</header>
-					<a href="https://www.kaggle.com/code/milangabriel/london-housing-data-analysis" target="_blank"
-						class="image fit"><img
-							src="https://images.unsplash.com/photo-1566515610329-94f02c3707d6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80"
-							alt="" /></a>
-					<p>Basics of data analysis on London housing dataset.</p>
-					<ul class="actions special">
-						<li><a href="https://www.kaggle.com/code/milangabriel/london-housing-data-analysis"
-								target="_blank" class="button">Full Story</a></li>
-					</ul>
-				</article>
-			</section>
+.text-center {
+    text-align: center;
+}
 
-			<!-- Footer -->
-			<footer>
-			<!--	
-					<div class="pagination">
-					<a href="#" class="previous">Prev</a>
-					<a href="#" class="page active">1</a>
-					<a href="#" class="page">2</a>
-					<a href="#" class="page">3</a>
-					<span class="extra">&hellip;</span>
-					<a href="#" class="page">8</a>
-					<a href="#" class="page">9</a>
-					<a href="#" class="page">10</a>
-					<a href="#" class="next">Next</a>
-				-->
-				</div>
-			</footer>
+/* --- Buttons --- */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
 
-		</div>
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
 
-		<!-- Footer -->
-		<footer id="footer">
-			<section>
-				<p style="font-weight: bold;">P.S. I will not get any feedback from this form; this is here to test run inputs</p>
-				<form method="post" action="#">
-					<div class="fields">
-						<div class="field">
-							<label for="name">Name</label>
-							<input type="text" name="name" id="name" />
-						</div>
-						<div class="field">
-							<label for="email">Email</label>
-							<input type="text" name="email" id="email" />
-						</div>
-						<div class="field">
-							<label for="message">Message</label>
-							<textarea name="message" id="message" rows="3"></textarea>
-						</div>
-					</div>
-					<ul class="actions">
-						<li><input type="submit" value="Send Message" /></li>
-					</ul>
-				</form>
-			</section>
-			<section class="split contact">
-				<p style="font-weight: bold;"><br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My actual contact information; oplease be considerate!</p>
-				<section class="alt">
-					<h3>Address</h3>
-					<p>Anand, <br />Gujarat,<br />
-						India</p>
-				</section>
-				<section>
-					<h3>Phone</h3>
-					<p><a href="wa.me/+919737080177">(973)708-0177</a></p>
-				</section>
-				<section>
-					<h3>Email</h3>
-					<p><a href="mailto:the1onwrongway@gmail.com">the1onwrongway@gmail.com</a></p>
-				</section>
-				<section>
-					<h3>Social</h3>
-					<ul class="icons alt">
-						<li><a href="https://twitter.com/The01onwrongway" target="_blank" class="icon brands alt fa-twitter"><span
-									class="label">Twitter</span></a></li>
-						<li><a href="https://www.facebook.com/iamgabbar.ml" target="_blank" class="icon brands alt fa-facebook-f"><span
-									class="label">Facebook</span></a></li>
-						<li><a href="https:/www.instagram.com/the1onwrongway/?hl=en"
-							target="_blank" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="https://www.linkedin.com/in/milan-gabriel/"
-							target="_blank" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a href="https://github.com/the1onwrongway" target="_blank" class="icon brands alt fa-github"><span
-									class="label">GitHub</span></a></li>
-						<li><a href="https://bit.ly/telangana_project" target="_blank" class="icon brands alt fa-youtube"><span
-									class="label">YouTube</span></a></li></ul>
-				</section>
-			</section>
-		</footer>
+.btn-primary:hover {
+    background-color: #005a9e;
+}
 
-		<!-- Copyright -->
-		<div id="copyright">
-			<ul>
-				<li>&copy; Milan Gabriel Macwan</li>
-				<li>Design: <a href="https://github.com/the1onwrongway" target="_blank" >GitHub</a></li>
-			</ul>
-		</div>
+.btn-secondary {
+    background-color: transparent;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
 
-	</div>
+.btn-secondary:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
 
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
+/* --- Header/Navigation --- */
+.navbar {
+    background: var(--white);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    height: 60px;
+}
 
-</body>
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
 
-</html>
+.logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    color: var(--text-light);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+/* --- Hero Section --- */
+.hero-section {
+    height: 80vh;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    /* Optional: Subtle background gradient or image */
+    background: linear-gradient(135deg, var(--white) 50%, var(--bg-light) 50%);
+    padding-top: 60px; /* Offset for fixed nav */
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.lead-text {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    margin-bottom: 30px;
+}
+
+.hero-buttons .btn {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/* --- About Section --- */
+#about p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+/* --- Skills Section --- */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.skill-card {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    text-align: center;
+    border-top: 4px solid var(--primary-color);
+}
+
+.skill-icon {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.skill-card h3 {
+    margin-bottom: 20px;
+}
+
+.skill-card ul li {
+    margin-bottom: 10px;
+    color: var(--text-light);
+}
+
+/* --- Projects Section --- */
+.project-card {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project-subtitle {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+/* The Diagram Placeholder */
+.diagram-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid #eee;
+}
+
+.diagram-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Alternative placeholder style if no image */
+.placeholder-text {
+    background: #ddd;
+    color: #666;
+    padding: 80px 20px;
+    font-weight: bold;
+    border: 2px dashed #999;
+}
+
+
+.project-details h4 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.project-details ul {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.project-details ul li {
+    margin-bottom: 8px;
+    color: var(--text-light);
+}
+
+.tech-stack {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tech-badge {
+    background: var(--bg-light);
+    color: var(--secondary-color);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid #dce4ec;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* --- Contact/Footer --- */
+.footer-section {
+    background: var(--secondary-color);
+    color: var(--white);
+}
+
+.footer-section h2 {
+    color: var(--white);
+}
+
+.footer-section p {
+    margin-bottom: 30px;
+    color: #dce4ec;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-links .btn-secondary {
+    color: var(--white);
+    border-color: var(--white);
+}
+
+.contact-links .btn-secondary:hover {
+    background: var(--white);
+    color: var(--secondary-color);
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .hero-section {
+        padding-top: 120px; /* More space for stacked nav */
+        height: auto;
+        padding-bottom: 60px;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .section-pad {
+        padding: 50px 0;
+    }
+    
+    .project-card {
+        padding: 25px;
+    }
+}
