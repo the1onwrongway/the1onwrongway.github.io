@@ -1,364 +1,144 @@
-/* --- Global Resets & Variables --- */
-:root {
-    --primary-color: #0078d4; /* Azure Blue style */
-    --secondary-color: #2b3c4e;
-    --bg-light: #f4f7f9;
-    --text-dark: #333;
-    --text-light: #666;
-    --white: #ffffff;
-    --max-width: 1100px;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.6;
-    color: var(--text-dark);
-    background-color: var(--white);
-}
-
-h1, h2, h3, h4 {
-    line-height: 1.2;
-    color: var(--secondary-color);
-}
-
-a {
-    text-decoration: none;
-    color: var(--primary-color);
-}
-
-ul {
-    list-style: none;
-}
-
-/* --- Utility Classes --- */
-.container {
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.smaller-container {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.section-pad {
-    padding: 80px 0;
-}
-
-.bg-light {
-    background-color: var(--bg-light);
-}
-
-.section-title {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 40px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.text-center {
-    text-align: center;
-}
-
-/* --- Buttons --- */
-.btn {
-    display: inline-block;
-    padding: 12px 24px;
-    border-radius: 4px;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
-}
-
-.btn-primary {
-    background-color: var(--primary-color);
-    color: var(--white);
-}
-
-.btn-primary:hover {
-    background-color: #005a9e;
-}
-
-.btn-secondary {
-    background-color: transparent;
-    color: var(--primary-color);
-    border-color: var(--primary-color);
-}
-
-.btn-secondary:hover {
-    background-color: var(--primary-color);
-    color: var(--white);
-}
-
-/* --- Header/Navigation --- */
-.navbar {
-    background: var(--white);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 100;
-    height: 60px;
-}
-
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-}
-
-.logo {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: var(--secondary-color);
-}
-
-.nav-links {
-    display: flex;
-}
-
-.nav-links li {
-    margin-left: 30px;
-}
-
-.nav-links a {
-    color: var(--text-light);
-    font-weight: 500;
-    font-size: 0.9rem;
-}
-
-.nav-links a:hover {
-    color: var(--primary-color);
-}
-
-/* --- Hero Section --- */
-.hero-section {
-    height: 80vh;
-    min-height: 500px;
-    display: flex;
-    align-items: center;
-    /* Optional: Subtle background gradient or image */
-    background: linear-gradient(135deg, var(--white) 50%, var(--bg-light) 50%);
-    padding-top: 60px; /* Offset for fixed nav */
-}
-
-.hero-content {
-    max-width: 800px;
-}
-
-.hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.lead-text {
-    font-size: 1.2rem;
-    color: var(--text-light);
-    margin-bottom: 30px;
-}
-
-.hero-buttons .btn {
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
-
-/* --- About Section --- */
-#about p {
-    margin-bottom: 20px;
-    font-size: 1.1rem;
-}
-
-/* --- Skills Section --- */
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-}
-
-.skill-card {
-    background: var(--white);
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    text-align: center;
-    border-top: 4px solid var(--primary-color);
-}
-
-.skill-icon {
-    font-size: 2rem;
-    color: var(--primary-color);
-    margin-bottom: 20px;
-}
-
-.skill-card h3 {
-    margin-bottom: 20px;
-}
-
-.skill-card ul li {
-    margin-bottom: 10px;
-    color: var(--text-light);
-}
-
-/* --- Projects Section --- */
-.project-card {
-    background: var(--white);
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    margin-bottom: 40px;
-}
-
-.project-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.project-subtitle {
-    font-size: 1.1rem;
-    color: var(--primary-color);
-    margin-bottom: 30px;
-    font-weight: 500;
-}
-
-/* The Diagram Placeholder */
-.diagram-container {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 40px;
-    border-radius: 4px;
-    overflow: hidden;
-    border: 1px solid #eee;
-}
-
-.diagram-img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* Alternative placeholder style if no image */
-.placeholder-text {
-    background: #ddd;
-    color: #666;
-    padding: 80px 20px;
-    font-weight: bold;
-    border: 2px dashed #999;
-}
-
-
-.project-details h4 {
-    margin-top: 25px;
-    margin-bottom: 10px;
-    font-size: 1.1rem;
-}
-
-.project-details ul {
-    list-style: disc;
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
-
-.project-details ul li {
-    margin-bottom: 8px;
-    color: var(--text-light);
-}
-
-.tech-stack {
-    margin-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.tech-badge {
-    background: var(--bg-light);
-    color: var(--secondary-color);
-    padding: 5px 15px;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    font-weight: 500;
-    border: 1px solid #dce4ec;
-}
-
-.project-link {
-    display: inline-block;
-    margin-top: 20px;
-    font-weight: bold;
-}
-
-/* --- Contact/Footer --- */
-.footer-section {
-    background: var(--secondary-color);
-    color: var(--white);
-}
-
-.footer-section h2 {
-    color: var(--white);
-}
-
-.footer-section p {
-    margin-bottom: 30px;
-    color: #dce4ec;
-}
-
-.contact-links {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.contact-links .btn-secondary {
-    color: var(--white);
-    border-color: var(--white);
-}
-
-.contact-links .btn-secondary:hover {
-    background: var(--white);
-    color: var(--secondary-color);
-}
-
-/* --- Mobile Responsiveness --- */
-@media (max-width: 768px) {
-    .nav-container {
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    .nav-links {
-        margin-top: 10px;
-    }
-
-    .nav-links li {
-        margin-left: 15px;
-        margin-right: 15px;
-    }
-
-    .hero-section {
-        padding-top: 120px; /* More space for stacked nav */
-        height: auto;
-        padding-bottom: 60px;
-        text-align: center;
-    }
-
-    .hero-content h1 {
-        font-size: 2.2rem;
-    }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Milan Gabriel | Data Engineer</title>
+    <meta name="description" content="Portfolio of a Data Engineer bridging commercial operations and Azure cloud solutions.">
     
-    .section-pad {
-        padding: 50px 0;
-    }
+    <link rel="stylesheet" href="style.css">
     
-    .project-card {
-        padding: 25px;
-    }
-}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">Milan Gabriel</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="container hero-content">
+            <h1>Data Engineer bridging Commercial Ops & IT</h1>
+            <p class="lead-text">
+                Leveraging 10 years of commercial experience to build robust Azure data platforms. I translate business urgency into reliable technical solutions using ADF, Databricks, and PySpark.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Projects</a>
+                <a href="/Files/Milan_Gabriel_Data_Engineer_Azure.pdf" class="btn btn-secondary" target="_blank">Download Resume <i class="fas fa-download"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section-pad bg-light">
+        <div class="container smaller-container">
+            <h2 class="section-title">The Pivot</h2>
+            <p>For a decade working in Commercial Operations, I was the liaison between business stakeholders and IT teams. I saw firsthand the frustration of delayed insights and siloed data.</p>
+            <p>Driven by a need to get things done faster, I taught myself the modern data stack—starting with SQL and Python, and moving fully into Azure Cloud Engineering.</p>
+            <p><strong>Why this matters:</strong> I don't just build pipelines; I understand the commercial impact of the data flowing through them. I build reliable systems because I know what happens to the business when they break.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="section-pad">
+        <div class="container">
+            <h2 class="section-title">Technical Toolbox</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fas fa-cloud skill-icon"></i>
+                    <h3>Azure Data Engineering</h3>
+                    <ul>
+                        <li>Azure Data Factory (ADF)</li>
+                        <li>Databricks & Spark</li>
+                        <li>Azure Synapse Analytics</li>
+                        <li>ADLS Gen2 (Data Lake)</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-code skill-icon"></i>
+                    <h3>Languages & Processing</h3>
+                    <ul>
+                        <li>Python (Pandas, PySpark)</li>
+                        <li>Advanced SQL</li>
+                        <li>ETL/ELT Design Patterns</li>
+                        <li>Data Modeling (Star Schema)</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-chart-line skill-icon"></i>
+                    <h3>Serving & Visualization</h3>
+                    <ul>
+                        <li>Power BI</li>
+                        <li>Streamlit</li>
+                        <li>Data Quality Checks</li>
+                        <li>Stakeholder Management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section-pad bg-light">
+        <div class="container">
+            <h2 class="section-title">Featured Work</h2>
+            
+            <div class="project-card">
+                <h3>End-to-End Airport Commercial Analytics</h3>
+                <p class="project-subtitle">Processing 2M+ records daily with 99% reliability on Azure.</p>
+                
+                <div class="diagram-container">
+                    <img src="images/sfo_data_engineering_architecture.png" alt="Architecture Diagram showing data flow from source to Power BI via Azure ADF and Databricks" class="diagram-img">
+                    </div>
+
+                <div class="project-details">
+                    <h4>The Business Problem</h4>
+                    <p>Commercial teams relied on slow, manual Excel reports for tender performance across regions, leading to delayed decision-making and missed revenue opportunities.</p>
+                    
+                    <h4>The Technical Solution</h4>
+                    <ul>
+                        <li>Architected a Modern Data Lakehouse on Azure.</li>
+                        <li>Built orchestrations in <strong>ADF</strong> to ingest raw data from legacy systems into <strong>ADLS Gen2</strong> (Bronze layer).</li>
+                        <li>Utilized <strong>Databricks (PySpark)</strong> for complex transformations, data cleaning, and applying business logic (Silver layer).</li>
+                        <li>modeled aggregated data in <strong>Synapse</strong> for high-performance serving to dashboards.</li>
+                    </ul>
+                    
+                    <h4>Results</h4>
+                    <ul>
+                        <li>Achieved <strong>99%+ pipeline reliability</strong> through automated error handling.</li>
+                        <li>Reduced reporting latency from weekly to daily.</li>
+                    </ul>
+                </div>
+
+                <div class="tech-stack">
+                    <span class="tech-badge">Azure ADF</span>
+                    <span class="tech-badge">Databricks (PySpark)</span>
+                    <span class="tech-badge">ADLS Gen2</span>
+                    <span class="tech-badge">SQL</span>
+                    <span class="tech-badge">Power BI</span>
+                </div>
+                 </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-pad footer-section">
+        <div class="container smaller-container text-center">
+            <h2>Let's Connect</h2>
+            <p>I am always happy to chat about how Data Engineering and cloud solutions can be beneficial, and to explore if my skills could be useful for your upcoming challenges.</p>
+            <div class="contact-links">
+                <a href="https://www.linkedin.com/in/milan-gabriel/" target="_blank" class="btn btn-primary"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="mailto:milangabrielmacwan@gmail.com" class="btn btn-secondary"><i class="fas fa-envelope"></i> Email Me</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
