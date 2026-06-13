@@ -29,7 +29,7 @@ The content is:
 ## Session Index
 
 ### Session 1: Four-Step Dimensional Design Process
-**File:** `01_four_step_dimensional_design.pptx`
+**File:** [📊 Four-Step Dimensional Design Process](./01_four_step_dimensional_design.pptx)
 
 **Duration:** 45 minutes
 
@@ -57,40 +57,6 @@ The content is:
 - Have written/maintained dashboards or reports
 
 **Use Case:** Retail sales analytics (500 stores, 50K products, incremental weekly transactions)
-
----
-
-## Presentation Standards
-
-Each presentation follows these principles:
-
-### Design
-- Dark theme (accessibility, reduced eye strain)
-- Minimal text (you're the content, slides support you)
-- High-contrast accent colors (green for concepts, red for warnings, blue for focus)
-- One consistent example throughout (no switching scenarios mid-presentation)
-
-### Content
-- Concepts grounded in real-world scenarios
-- Contrasts shown (good vs bad, can vs cannot)
-- Mistakes illustrated with consequences
-- SQL examples where applicable
-- Schema diagrams for visual learning
-- Interactive moments (audience participation)
-
-### Delivery
-- Technical, direct tone (no corporate fluff)
-- ~45 minutes total (5 min buffer)
-- 30-40 slides (never slide-dumping)
-- Speaker notes provided separately
-- Live examples encouraged
-- Q&A built into timing
-
-### Scope
-- One topic per session (not multiple)
-- Progressive difficulty (101 → 201 → 301 series possible)
-- Kimball as foundation (not competing frameworks)
-- AWS/cloud references but tool-agnostic theory
 
 ---
 
