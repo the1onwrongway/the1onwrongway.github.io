@@ -29,7 +29,7 @@ The content is:
 ## Session Index
 
 ### Session 1: Four-Step Dimensional Design Process
-**File:** [📊 Four-Step Dimensional Design Process_Data_Modelling_101](./Four-Step%20Dimensional%20Design%20Process_Data_Modelling_101.pptx)
+**File:** [📊 Four-Step Dimensional Design Process_Data_Modelling_101](./Four-Step%20Dimensional%20Design%20Process_Data_Modelling_101.pdf)
 
 **Duration:** 45 minutes
 
