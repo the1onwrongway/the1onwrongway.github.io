@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const sections = document.querySelectorAll('section, footer');
+    const sections = document.querySelectorAll('section[id], footer[id]');
     const navLinks = document.querySelectorAll('.nav-item');
 
     window.addEventListener('scroll', () => {

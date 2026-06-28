@@ -240,7 +240,23 @@ header {
 .kpi-card p {
     color: var(--text-secondary);
     font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.kpi-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.8rem;
+    color: var(--accent);
+    text-decoration: none;
+    font-family: var(--font-mono);
     margin-bottom: 1.5rem;
+    transition: color 0.2s ease;
+}
+
+.kpi-link:hover {
+    color: var(--text-primary);
 }
 
 .kpi-card .metric {
