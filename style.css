@@ -245,45 +245,30 @@ header {
 .kpi-card p {
     color: var(--text-secondary);
     font-size: 0.95rem;
-    margin-bottom: 1rem;
-}
-
-.kpi-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.35rem;
-    font-size: 0.75rem;
-    color: var(--accent);
-    background-color: rgba(56, 189, 248, 0.08);
-    border: 1px solid rgba(56, 189, 248, 0.2);
-    padding: 0.35rem 0.7rem;
-    border-radius: 4px;
-    text-decoration: none;
-    font-family: var(--font-mono);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    font-weight: 500;
-    margin-top: 0.5rem;
-    margin-bottom: 1.25rem;
-    transition: all 0.2s ease;
-    width: fit-content;
-}
-
-.kpi-link:hover {
-    background-color: rgba(56, 189, 248, 0.18);
-    border-color: var(--accent);
-    color: var(--text-primary);
-    transform: translateY(-1px);
+    margin-bottom: 1.5rem;
 }
 
 .kpi-card .metric {
     font-family: var(--font-mono);
     font-size: 0.85rem;
     background-color: var(--bg-secondary);
+    color: var(--text-primary);
     padding: 0.25rem 0.75rem;
     border-radius: 4px;
     width: fit-content;
     border: 1px solid var(--border-color);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.kpi-card a.metric:hover {
+    background-color: rgba(56, 189, 248, 0.08);
+    border-color: var(--accent);
+    color: var(--accent);
+    transform: translateY(-1px);
 }
 
 /* Projects Layout */
