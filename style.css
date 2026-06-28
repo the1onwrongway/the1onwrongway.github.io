@@ -248,7 +248,10 @@ header {
     margin-bottom: 1.5rem;
 }
 
-.kpi-card .metric {
+.kpi-card .metric,
+.kpi-card a.metric,
+.kpi-card a.metric:link,
+.kpi-card a.metric:visited {
     font-family: var(--font-mono);
     font-size: 0.85rem;
     background-color: var(--bg-secondary);
@@ -267,7 +270,7 @@ header {
 .kpi-card a.metric:hover {
     background-color: rgba(56, 189, 248, 0.08);
     border-color: var(--accent);
-    color: var(--accent);
+    color: var(--accent) !important;
     transform: translateY(-1px);
 }
 
