@@ -3,275 +3,261 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Milan Gabriel | Data Engineer</title>
-    <meta name="description" content="Portfolio of a Data Engineer bridging commercial operations and AWS cloud solutions.">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Portfolio of Milan Gabriel, a Data Engineer with a decade of industry experience bridging business strategy and cloud data engineering.">
     <link rel="shortcut icon" type="image/png" href="images/new_profile_grayscale_circle.png">
     
+    <!-- Typography & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="navbar">
+    <!-- Top Navigation -->
+    <header>
         <div class="container nav-container">
-            <a href="#home" class="logo">Milan Gabriel</a>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#sessions">Sessions</a></li>
-                    <li><a href="#community">Community</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+            <a href="#home" class="logo">MILAN<span>.G</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-item">Home</a></li>
+                <li><a href="#credentials" class="nav-item">Credentials</a></li>
+                <li><a href="#projects" class="nav-item">Projects</a></li>
+                <li><a href="#sessions" class="nav-item">Sessions</a></li>
+                <li><a href="#contact" class="nav-item">Contact</a></li>
+            </ul>
         </div>
     </header>
 
-    <section id="home" class="hero-section">
-        <div class="container hero-container">
-            <div class="hero-content">
-                <h1>Data Engineer bridging Commercial Ops & IT</h1>
-                <p class="lead-text">
-                    Leveraging 10 years of commercial experience to build robust AWS data platforms. I translate business urgency into reliable technical solutions using AWS Glue, Redshift, S3, Databricks, and PySpark.
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <h1>Data Engineer <span>& Architect</span></h1>
+                <p>
+                    A decade of industry tenure balancing deep data infrastructure design with core business execution.
                 </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Projects</a>
-                    <a href="Files/Milan_Gabriel_Data_Engineer_Azure.pdf" class="btn btn-secondary" target="_blank">View Resume <i class="far fa-file-pdf"></i></a>
+                <div class="hero-socials">
+                    <a href="Files/Milan_Gabriel_Data_Engineer.pdf" class="icon-btn" target="_blank" title="Resume"><i class="far fa-file-pdf"></i></a>
+                    <a href="https://linkedin.com/in/milan-gabriel" class="icon-btn" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/the1onwrongway" class="icon-btn" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:milangabrielmacwan@gmail.com" class="icon-btn" title="Email"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
-            <div class="hero-image-container">
-                <img src="images/new_profile.jpeg" alt="Milan Gabriel Profile Picture" class="hero-profile-img">
+            <div class="hero-image">
+                <div class="polaroid">
+                    <img src="images/new_profile.jpeg" alt="Milan Gabriel">
+                    <div class="polaroid-caption">Milan Gabriel</div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="section-pad bg-light">
-        <div class="container smaller-container">
-            <h2 class="section-title">The Pivot</h2>
-            <p>For a decade working in Commercial Operations, I was the liaison between business stakeholders and IT teams. I saw firsthand the frustration of delayed insights and siloed data.</p>
-            <p>Driven by a need to get things done faster, I taught myself the modern data stack; starting with SQL and Python, and moving fully into AWS Cloud Engineering.</p>
-            <p><strong>Why this matters:</strong> I don't just build pipelines; I understand the commercial impact of the data flowing through them. I build reliable systems because I know what happens to the business when they break.</p>
-        </div>
-    </section>
-
-    <section id="skills" class="section-pad">
+    <!-- Core Credentials Section -->
+    <section class="section" id="credentials">
         <div class="container">
-            <h2 class="section-title">Technical Toolbox</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <i class="fas fa-cloud skill-icon"></i>
-                    <h3>AWS Data Engineering</h3>
-                    <ul>
-                        <li>AWS Glue (ETL/Catalog)</li>
-                        <li>Databricks & Spark (EMR)</li>
-                        <li>Amazon Redshift & Athena</li>
-                        <li>Amazon S3 (Data Lake)</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-code skill-icon"></i>
-                    <h3>Languages & Processing</h3>
-                    <ul>
-                        <li>Python (Pandas, PySpark)</li>
-                        <li>Advanced SQL</li>
-                        <li>ETL/ELT Design Patterns</li>
-                        <li>Data Modeling (Star Schema)</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-chart-line skill-icon"></i>
-                    <h3>Serving & Visualization</h3>
-                    <ul>
-                        <li>Power BI</li>
-                        <li>Streamlit</li>
-                        <li>Data Quality Checks</li>
-                        <li>Stakeholder Management</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="section-pad bg-light">
-        <div class="container">
-            <h2 class="section-title">Featured Work</h2>
-            
-            <div class="project-card">
-                <h3>End-to-End Airport Commercial Analytics</h3>
-                <p class="project-subtitle">Processing 2M+ records daily with 99% reliability on AWS.</p>
-                
-                <div class="diagram-container">
-                    <img src="images/sfo_data_engineering_architecture.png" alt="Architecture Diagram showing data flow from source to Power BI via AWS Glue and Databricks" class="diagram-img">
+            <h2 class="section-title">Core Credentials</h2>
+            <div class="kpi-grid">
+                <div class="kpi-card">
+                    <div>
+                        <h3>Databricks Hackathons</h3>
+                        <span class="role">Architectural Evaluator & Designer</span>
+                        <p>Designed comprehensive data pipeline challenges and assessed end-to-end architectures for national HackBricks events.</p>
                     </div>
-
-                <div class="project-details">
-                    <h4>The Business Problem</h4>
-                    <p>Commercial teams relied on slow, manual Excel reports for tender performance across regions, leading to delayed decision-making and missed revenue opportunities.</p>
-                    
-                    <h4>The Technical Solution</h4>
-                    <ul>
-                        <li>Architected a Modern Data Lakehouse on AWS.</li>
-                        <li>Built orchestrations in <strong>AWS Glue</strong> to ingest raw data from legacy systems into <strong>Amazon S3</strong> (Bronze layer).</li>
-                        <li>Utilized <strong>Databricks (PySpark)</strong> for complex transformations, data cleaning, and applying business logic (Silver layer).</li>
-                        <li>modeled aggregated data in <strong>Amazon Redshift</strong> for high-performance serving to dashboards.</li>
-                    </ul>
-                    
-                    <h4>Results</h4>
-                    <ul>
-                        <li>Achieved <strong>99%+ pipeline reliability</strong> through automated error handling.</li>
-                        <li>Reduced reporting latency from weekly to daily.</li>
-                    </ul>
+                    <div class="metric">100+ Teams Evaluated</div>
                 </div>
-
-                <div class="tech-stack">
-                    <span class="tech-badge">AWS Glue</span>
-                    <span class="tech-badge">Databricks (PySpark)</span>
-                    <span class="tech-badge">Amazon S3</span>
-                    <span class="tech-badge">SQL</span>
-                    <span class="tech-badge">Power BI</span>
+                <div class="kpi-card">
+                    <div>
+                        <h3>GDG Lucknow APL</h3>
+                        <span class="role">APL Hackathon Mentor</span>
+                        <p>Mentored developers and engineering cohorts on multi-agent systems, orchestration workflows, and vector database engineering strategies.</p>
+                    </div>
+                    <div class="metric">Agentic AI Specialization</div>
                 </div>
-                 </div>
+                <div class="kpi-card">
+                    <div>
+                        <h3>Indian Data Club (IDC)</h3>
+                        <span class="role">Technical & Support Lead</span>
+                        <p>Manage infrastructure logic, community data challenges, and foundational training delivery pipelines for the ecosystem.</p>
+                    </div>
+                    <div class="metric">Core Team Lead</div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="sessions" class="section-pad">
+    <!-- Featured Pipelines Section -->
+    <section class="section" id="projects">
         <div class="container">
-            <h2 class="section-title">Data Modelling Sessions</h2>
+            <h2 class="section-title">Featured Pipelines</h2>
+            
+            <!-- Co-Equal Primary Featured Projects Grid -->
+            <div class="featured-projects-grid">
+                
+                <!-- Project 1: Airport Commercial Analytics -->
+                <div class="featured-project">
+                    <div>
+                        <span class="project-tag">Flagship Architecture</span>
+                        <h3>1. End-to-End Airport Commercial Analytics</h3>
+                        
+                        <div class="project-content-block">
+                            <h4>The Business Problem</h4>
+                            <p>Commercial teams depended on legacy weekly tracking extractions, leaving terminal asset operators blind to performance drops and delaying critical inventory or retail changes by 7+ days.</p>
+                        </div>
+                        
+                        <div class="project-content-block">
+                            <h4>The Technical Blueprint</h4>
+                            <ul>
+                                <li>Automated everyday operational system ingest streams using AWS Glue.</li>
+                                <li>Engineered multi-tier Bronze/Silver/Gold Lakehouse persistence strategies inside Amazon S3.</li>
+                                <li>Applied strict Kimball dimensional modeling schemas using Databricks (PySpark) execution.</li>
+                                <li>Surfaced performant, structured query layers into Amazon Redshift to power analytics tools.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="project-content-block">
+                            <h4>The Operational Outcome</h4>
+                            <p>Reduced analytical reporting latency from a full week down to a predictable, daily iteration cycle while preserving 99%+ production pipeline runtime reliability.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-tags">
+                        <span class="tech-tag">AWS Glue</span>
+                        <span class="tech-tag">Databricks</span>
+                        <span class="tech-tag">PySpark</span>
+                        <span class="tech-tag">Amazon S3</span>
+                        <span class="tech-tag">Amazon Redshift</span>
+                        <span class="tech-tag">Power BI</span>
+                    </div>
+                </div>
+
+                <!-- Project 2: SatyadarshI Space Data Pipeline -->
+                <div class="featured-project">
+                    <div>
+                        <span class="project-tag">Flagship Architecture</span>
+                        <h3>2. SatyadarshI ◈ Space Data Pipeline</h3>
+                        
+                        <div class="project-content-block">
+                            <h4>The Business Problem</h4>
+                            <p>Manually tracking regional agricultural anomalies at scale requires handling irregular geospatial metadata layers and massive datasets, resulting in severe verification delays for critical field evaluations.</p>
+                        </div>
+                        
+                        <div class="project-content-block">
+                            <h4>The Technical Blueprint</h4>
+                            <ul>
+                                <li>Engineered a high-performance cloud processing asset to ingest earth observation spatial parameters.</li>
+                                <li>Automated the standard retrieval pipeline for Sentinel-2 satellite imagery infrastructure.</li>
+                                <li>Programmatically computed complex remote sensing NDVI vegetation indexes to pinpoint health anomalies.</li>
+                                <li>Leveraged local analytical storage optimizations to accelerate vector math performance.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="project-content-block">
+                            <h4>The Operational Outcome</h4>
+                            <p>Delivered an automated verification pipeline that completely removes manual processing friction, delivering crisp map analytics layers on demand.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-tags">
+                        <span class="tech-tag">DuckDB</span>
+                        <span class="tech-tag">Streamlit</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Sentinel API</span>
+                        <span class="tech-tag">Geospatial Processing</span>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- Secondary Projects Grid -->
+            <div class="secondary-projects-grid">
+                <div class="project-card">
+                    <div>
+                        <h3>3. GabMetrix Sports Analytics</h3>
+                        <p>An athletic performance engine translating raw, irregular match performance files into structured analytics datasets. Currently deploying analytical engines to evaluate player indicators under pilot with an elite sports academy.</p>
+                    </div>
+                    <div class="project-card-footer">
+                        <div class="tech-tags">
+                            <span class="tech-tag">Advanced SQL</span>
+                            <span class="tech-tag">Analytics Engine</span>
+                        </div>
+                        <a href="https://gabmetrix.github.io/" class="btn-sm" target="_blank"><i class="fas fa-external-link-alt"></i> Live App</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div>
+                        <h3>AI in Sales Strategy Brief</h3>
+                        <p>A strategic architecture brief demonstrating how consumer product companies can implement machine learning models for demand forecasting, inventory planning, and buyer segmentations.</p>
+                    </div>
+                    <div class="project-card-footer">
+                        <div class="tech-tags">
+                            <span class="tech-tag">ML Strategy</span>
+                            <span class="tech-tag">Demand Forecast</span>
+                        </div>
+                        <a href="./Case Study/AI-in-Retail-sales.html" class="btn-sm" target="_blank"><i class="fas fa-file-alt"></i> Read Brief</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Educational Sessions Section -->
+    <section class="section" id="sessions">
+        <div class="container">
+            <h2 class="section-title">Educational Sessions</h2>
             <div class="sessions-intro">
                 <p>
-                    I hold technical education sessions on dimensional data warehouse design and analytics engineering fundamentals for the <strong>Indian Data Club (IDC)</strong> community. Every session is built on Ralph Kimball's dimensional modeling framework.
+                    I design and present data warehouse architecture masterclasses for the <strong>Indian Data Club (IDC)</strong> community. Every track is dedicated to stripping away abstractions and teaching engineering logic built explicitly around Ralph Kimball's classic frameworks.
                 </p>
-                <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
-                    <a href="https://github.com/the1onwrongway/the1onwrongway.github.io/blob/main/Files/Data_Modelling_101/readme.md" target="_blank" class="btn btn-github btn-sm"><i class="fab fa-github"></i> Series Readme on GitHub</a>
-                </div>
+                <a href="https://github.com/the1onwrongway/the1onwrongway.github.io/blob/main/Files/Data_Modelling_101/readme.md" class="btn-sm" target="_blank"><i class="fab fa-github"></i> Repository Framework</a>
             </div>
 
-            <div class="sessions-grid">
-                <!-- Session 1 -->
-                <div class="session-card">
-                    <span class="session-badge active">Active</span>
-                    <h3>Session 1: Four-Step Dimensional Design</h3>
-                    <div class="session-meta">
-                        <span><i class="far fa-clock"></i> 45 Mins</span>
-                        <span><i class="fas fa-users"></i> Indian Data Club</span>
+            <div class="tickets-container">
+                <div class="ticket">
+                    <div class="ticket-top">
+                        <span class="ticket-badge active">Active</span>
+                        <h3>Four-Step Dimensional Design Process</h3>
                     </div>
-                    <p class="session-desc">
-                        A practical guide to Kimball's four-step process (Business Process, Grain, Dimensions, Facts) using a retail sales scenario.
-                    </p>
-                    <div class="session-actions">
-                        <a href="Files/Data_Modelling_101/PPTs/Four-Step%20Dimensional%20Design%20Process_Data_Modelling_101.pptx" target="_blank" class="btn btn-primary btn-sm"><i class="fas fa-file-powerpoint"></i> View PPTX</a>
+                    <div class="ticket-bottom">
+                        <p>A direct, production-focused breakdown of translating commercial business events into structured facts and descriptive dimensions at a defined atomic grain.</p>
+                        <a href="Files/Data_Modelling_101/PPTs/Four-Step%20Dimensional%20Design%20Process_Data_Modelling_101.pptx" target="_blank" class="btn-sm"><i class="fas fa-file-powerpoint"></i> Source Deck</a>
                     </div>
                 </div>
 
-                <!-- Session 2 -->
-                <div class="session-card upcoming">
-                    <span class="session-badge roadmap">Roadmap</span>
-                    <h3>Session 2: Slowly Changing Dimensions</h3>
-                    <div class="session-meta">
-                        <span><i class="far fa-calendar-alt"></i> Upcoming</span>
+                <div class="ticket">
+                    <div class="ticket-top">
+                        <span class="ticket-badge roadmap">Roadmap</span>
+                        <h3>Slowly Changing Dimensions (SCDs)</h3>
                     </div>
-                    <p class="session-desc">
-                        Deep dive into Type 0, 1, and 2 SCD strategies for historical tracking and their PySpark / SQL implementations.
-                    </p>
+                    <div class="ticket-bottom">
+                        <p>Writing transactional query frameworks and PySpark merge conditions to manage historical tracking changes over time across Type 0, 1, and 2 states.</p>
+                    </div>
                 </div>
 
-                <!-- Session 3 -->
-                <div class="session-card upcoming">
-                    <span class="session-badge roadmap">Roadmap</span>
-                    <h3>Session 3: Fact Table Patterns</h3>
-                    <div class="session-meta">
-                        <span><i class="far fa-calendar-alt"></i> Upcoming</span>
+                <div class="ticket">
+                    <div class="ticket-top">
+                        <span class="ticket-badge roadmap">Roadmap</span>
+                        <h3>Fact Table Pattern Selection</h3>
                     </div>
-                    <p class="session-desc">
-                        Designing transaction, periodic snapshot, and accumulating snapshot facts, plus degenerate dimensions.
-                    </p>
+                    <div class="ticket-bottom">
+                        <p>Architecting specific transactional collections, periodic updates, and accumulative processing loops against multi-million row scale datasets.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="community" class="section-pad bg-light">
+    <!-- Footer with Contacts -->
+    <footer id="contact">
         <div class="container">
-            <h2 class="section-title">Community & Leadership</h2>
-            
-            <div class="community-lead text-center" style="margin-bottom: 50px; max-width: 800px; margin-left: auto; margin-right: auto;">
-                <p style="font-size: 1.1rem; color: var(--text-light); margin-bottom: 20px;">
-                    Active in technical community leadership; mentoring developers, designing challenges, and evaluating national hackathons in the data engineering space.
-                </p>
-            </div>
-
-            <div class="community-grid">
-                <!-- Role 1: Indian Data Club Lead -->
-                <div class="community-card">
-                    <div class="community-card-header">
-                        <div class="role-icon"><i class="fas fa-users-cog"></i></div>
-                        <div>
-                            <h3>Lead for Tech & Support</h3>
-                            <p class="org-name"><a href="https://www.indiandataclub.com/" target="_blank">Indian Data Club (IDC)</a></p>
-                        </div>
-                    </div>
-                    <p class="role-desc">
-                        Organize community infrastructure and design hands-on educational challenges for the IDC community.
-                    </p>
-                    <div class="community-links">
-                        <a href="https://www.linkedin.com/posts/indian-data-club_sql-appreciation-carousel-activity-7404529029862735872-vQWp?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAChg8HsBgSYSzPA4YQ6b8W2hwf8VtV3UcvI" target="_blank" class="btn btn-secondary btn-sm"><i class="fab fa-linkedin"></i> SQL Challenge</a>
-                        <a href="https://www.linkedin.com/posts/indian-data-club_get-to-know-more-about-databricks-activity-7414302405057490944-PSPw?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAChg8HsBgSYSzPA4YQ6b8W2hwf8VtV3UcvI" target="_blank" class="btn btn-secondary btn-sm"><i class="fab fa-linkedin"></i> Databricks Challenge</a>
-                    </div>
-                </div>
-
-                <!-- Role 2: HackBricks Evaluator -->
-                <div class="community-card">
-                    <div class="community-card-header">
-                        <div class="role-icon"><i class="fas fa-trophy"></i></div>
-                        <div>
-                            <h3>HackBricks Evaluator & Problem Designer</h3>
-                            <p class="org-name">MITB ACM Student Chapter & IDC</p>
-                        </div>
-                    </div>
-                    <p class="role-desc">
-                        Designed technical problem statements and evaluated 100+ team submissions in a 24-hour Databricks hackathon, assessing pipeline design, Kimball modeling, and execution.
-                    </p>
-                    <div class="community-links">
-                        <a href="https://www.linkedin.com/posts/mit-bengaluru-089168224_mitbengaluru-hackbricks-hackathon-ugcPost-7449771647093432320-iDWu?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAChg8HsBgSYSzPA4YQ6b8W2hwf8VtV3UcvI" target="_blank" class="btn btn-secondary btn-sm"><i class="fab fa-linkedin"></i> Event Details</a>
-                    </div>
-                </div>
-
-                <!-- Role 3: GDG Lucknow Mentor -->
-                <div class="community-card">
-                    <div class="community-card-header">
-                        <div class="role-icon"><i class="fas fa-graduation-cap"></i></div>
-                        <div>
-                            <h3>Mentor - Agentic Premier League</h3>
-                            <p class="org-name">Google Developer Groups Lucknow</p>
-                        </div>
-                    </div>
-                    <p class="role-desc">
-                        Acted as an official hackathon mentor (May 2026) for the Agentic Premier League, assisting developers with AI agent architecture and cloud setup.
-                    </p>
-                    <div class="community-links">
-                        <a href="https://www.linkedin.com/posts/google-developer-groups-lucknow_apl-mentors-activity-7466728058020941824-EEwG?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAChg8HsBgSYSzPA4YQ6b8W2hwf8VtV3UcvI" target="_blank" class="btn btn-secondary btn-sm"><i class="fab fa-linkedin"></i> Event Details</a>
-                    </div>
-                </div>
-            </div>
+            <p class="copyright">&copy; 2026 Milan Gabriel. Engineered cleanly with structural architectural focus.</p>
         </div>
-    </section>
+    </footer>
 
-    <section id="contact" class="section-pad footer-section">
-        <div class="container smaller-container text-center">
-            <h2>Let's Connect</h2>
-            <p>I am always happy to chat about how Data Engineering and cloud solutions can be beneficial, and to explore if my skills could be useful for your upcoming challenges.</p>
-            <div class="contact-links">
-                <a href="https://www.linkedin.com/in/milan-gabriel/" target="_blank" class="btn btn-primary"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="mailto:milangabrielmacwan@gmail.com" class="btn btn-secondary"><i class="fas fa-envelope"></i> Email Me</a>
-            </div>
-        </div>
-    </section>
-
+    <!-- JavaScript Navigation Tracking -->
+    <script src="script.js"></script>
 </body>
 </html>
