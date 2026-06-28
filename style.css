@@ -82,10 +82,10 @@ header {
 
 /* Hero Section */
 .hero {
-    padding: 10rem 0 6rem 0;
+    padding: 6.5rem 0 4.5rem 0;
     display: flex;
     align-items: center;
-    min-height: 70vh;
+    min-height: 55vh;
 }
 
 .hero-grid {
@@ -170,7 +170,7 @@ header {
 
 /* Section Layouts */
 .section {
-    padding: 6rem 0;
+    padding: 4.25rem 0;
     border-top: 1px solid var(--border-color);
 }
 
@@ -478,9 +478,40 @@ header {
 
 /* Footer */
 footer {
-    padding: 5rem 0 3rem 0;
+    padding: 2.5rem 0;
     border-top: 1px solid var(--border-color);
     text-align: center;
+}
+
+/* Contact Button styles */
+.contact-buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.65rem 1.25rem;
+    font-size: 0.85rem;
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    text-decoration: none;
+    border-radius: 4px;
+    font-family: var(--font-mono);
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    border-color: var(--accent);
+    background-color: var(--bg-primary);
+    color: var(--accent);
+    transform: translateY(-2px);
 }
 
 .footer-connect {
