@@ -3,632 +3,360 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Milan Gabriel | Data Team Leader</title>
+    <title>Milan Gabriel | Resume</title>
+    <meta name="description" content="Resume of Milan Gabriel, Senior Data Engineer & Solution Architect — cloud data platforms at scale.">
+    <link rel="shortcut icon" type="image/png" href="images/new_profile_grayscale_circle.png">
+
+    <!-- Typography & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css?v=1.0.4">
+
     <style>
-        :root {
-            --primary-color: #1e3a8a;
-            --secondary-color: #3b82f6;
-            --accent-color: #60a5fa;
-            --background-color: #f8fafc;
-            --text-color: #1e293b;
-            --light-text: #64748b;
-            --card-bg: #ffffff;
-            --border-color: #e2e8f0;
+        /* Resume-only additions, built from the same tokens in style.css */
+        .resume-hero {
+            padding: 5.5rem 0 1rem 0;
         }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        }
-
-        body {
-            background-color: var(--background-color);
-            color: var(--text-color);
-            line-height: 1.6;
-        }
-
-        a {
-            color: var(--secondary-color);
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        a:hover {
-            color: var(--primary-color);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        header {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 40px 0;
-            position: relative;
-            overflow: hidden;
-        }
-
-        header::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, rgba(30, 58, 138, 0.8) 0%, rgba(59, 130, 246, 0.6) 100%);
-            z-index: 1;
-        }
-
-        .header-content {
-            position: relative;
-            z-index: 2;
-        }
-
-        .profile {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .profile h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-
-        .profile h2 {
-            font-size: 1.5rem;
-            font-weight: 500;
-            margin-bottom: 20px;
-            color: rgba(255, 255, 255, 0.9);
-        }
-
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin-top: 20px;
-        }
-
-        .contact-info a {
-            display: flex;
-            align-items: center;
-            background-color: rgba(255, 255, 255, 0.1);
-            padding: 8px 15px;
-            border-radius: 30px;
-            color: white;
-            font-size: 0.9rem;
-            transition: background-color 0.3s ease;
-        }
-
-        .contact-info a:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-        }
-
-        .contact-info a svg {
-            margin-right: 8px;
-        }
-
-        main {
-            padding: 50px 0;
-        }
-
-        .section {
-            margin-bottom: 60px;
-        }
-
-        .section-title {
-            position: relative;
-            display: inline-block;
-            font-size: 1.8rem;
-            margin-bottom: 30px;
-            color: var(--primary-color);
-            padding-bottom: 8px;
-        }
-
-        .section-title::after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 60px;
-            height: 3px;
-            background-color: var(--accent-color);
-        }
-
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 25px;
-        }
-
-        .card {
-            background-color: var(--card-bg);
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-            padding: 25px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border: 1px solid var(--border-color);
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .card-title {
-            font-size: 1.3rem;
-            margin-bottom: 10px;
-            color: var(--primary-color);
-        }
-
-        .card-subtitle {
-            font-size: 0.9rem;
-            color: var(--light-text);
-            margin-bottom: 15px;
-        }
-
-        .card-content {
-            margin-top: 15px;
-        }
-
-        .card-content ul {
-            padding-left: 20px;
-            margin-top: 10px;
-        }
-
-        .card-content li {
-            margin-bottom: 8px;
-        }
-
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 15px;
-        }
-
-        .skill {
-            background-color: rgba(96, 165, 250, 0.1);
-            color: var(--primary-color);
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            font-weight: 500;
-        }
-
-        .certifications {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 15px;
-        }
-
-        .certification {
-            background-color: var(--card-bg);
-            border-radius: 8px;
-            border: 1px solid var(--border-color);
-            padding: 15px;
-            transition: transform 0.3s ease;
-        }
-
-        .certification:hover {
-            transform: translateY(-3px);
-        }
-
-        .certification h4 {
+        .resume-hero .hero-text .role-line {
+            font-family: var(--font-mono);
             font-size: 1rem;
-            margin-bottom: 5px;
+            color: var(--accent);
+            margin-bottom: 1.25rem;
         }
-
-        .certification p {
+        .skill-card dl {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0.75rem;
+        }
+        .skill-card dt {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--accent);
+            margin-bottom: 0.35rem;
+        }
+        .skill-card dd {
+            color: var(--text-secondary);
             font-size: 0.9rem;
-            color: var(--light-text);
         }
-
-        .project-card {
+        .experience-grid {
             display: flex;
             flex-direction: column;
-            height: 100%;
+            gap: 2rem;
         }
-
-        .project-card .card-content {
-            flex-grow: 1;
-        }
-
-        .project-links {
-            margin-top: 15px;
+        .ticket-top .job-meta {
             display: flex;
-            gap: 10px;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 0.5rem 1rem;
+            margin-top: 0.5rem;
         }
-
-        .project-links a {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 6px 12px;
-            border-radius: 4px;
-            font-size: 0.9rem;
-            transition: background-color 0.3s ease;
+        .ticket-top .job-dates {
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            white-space: nowrap;
         }
-
-        .project-links a:hover {
-            background-color: var(--secondary-color);
+        .ticket-top .job-org {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            color: var(--accent);
         }
-
-        footer {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 30px 0;
-            text-align: center;
-        }
-
-        .footer-content {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .footer-content p {
-            margin-bottom: 20px;
-        }
-
-        .social-links {
+        .edu-card {
             display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 20px;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 0.5rem 1rem;
         }
-
-        .social-links a {
-            color: white;
-            font-size: 1.2rem;
-            transition: transform 0.3s ease;
-        }
-
-        .social-links a:hover {
-            transform: scale(1.2);
-        }
-
-        @media (max-width: 768px) {
-            .profile h1 {
-                font-size: 2rem;
-            }
-            
-            .profile h2 {
-                font-size: 1.2rem;
-            }
-            
-            .section-title {
-                font-size: 1.5rem;
-            }
-            
-            .cards {
-                grid-template-columns: 1fr;
-            }
-            
-            /* Reset the grid layout in mobile view */
-            main > div {
-                display: block !important;
-            }
+        .edu-card .edu-dates {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            color: var(--text-secondary);
         }
     </style>
 </head>
 <body>
+
+    <!-- Top Navigation -->
     <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="profile">
-                    <h1>Milan Gabriel</h1>
-                    <h2>Team Leader — Tenders & Pricing</h2>
-                    <div class="contact-info">
-                        <a href="mailto:milangabrielmacwan@gmail.com">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
-                            </svg>
-                            Email
-                        </a>
-                        <a href="https://linkedin.com/in/milan-gabriel" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-                            </svg>
-                            LinkedIn
-                        </a>
-                        <!--<a href="https://www.youtube.com/@the1onwrongway" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
-                              </svg>
-                            YouTube
-                        </a>
-                        -->
-                        <a href="https://the1onwrongway.github.io/" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                            </svg>
-                            Portfolio
-                        </a>
-                        <a href="https://gabmetrix.github.io/" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                                <path d="M2 10h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1zm9-9h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zm0 9h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1zM2 1h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
-                            </svg>
-                            GabMetrix
-                        </a>
-                    </div>
-                </div>
-            </div>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Milan <span>Gabriel</span></a>
+            <ul class="nav-links">
+                <li><a href="#top" class="nav-item">Resume</a></li>
+                <li><a href="#experience" class="nav-item">Experience</a></li>
+                <li><a href="#projects" class="nav-item">Projects</a></li>
+                <li><a href="#credentials" class="nav-item">Credentials</a></li>
+                <li><a href="#contact" class="nav-item">Contact</a></li>
+            </ul>
         </div>
     </header>
 
-    <main class="container">
-        <section class="section">
-            <h2 class="section-title">Objective</h2>
-            <p>To make data tell stories—bridging the gap between raw information and strategic business decisions through powerful analytics, automation, and visualization.</p>
-        </section>
+    <!-- Hero: identity + summary -->
+    <section class="hero resume-hero" id="top">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <h1>Data Engineer <span>& Architect</span></h1>
+                <div class="role-line">Senior Data Engineer &amp; Solution Architect — Cloud Data Platforms at Scale</div>
+                <p>
+                    10+ years designing, owning, and scaling cloud data platforms end to end — currently sole architect and engineer for a manufacturing enterprise's entire AWS data estate. Builds Kimball dimensional models, Bronze/Silver/Gold Lakehouse design, and governed data products in Spark and Databricks. Remote-first, comfortable as the only technical owner in the room.
+                </p>
+                <div class="hero-socials">
+                    <a href="Files/Milan_Gabriel_Data_Engineer.pdf" class="icon-btn" target="_blank" title="Download PDF"><i class="far fa-file-pdf"></i></a>
+                    <a href="mailto:milangabrielmacwan@gmail.com" class="icon-btn" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://linkedin.com/in/milan-gabriel" class="icon-btn" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/the1onwrongway" class="icon-btn" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="polaroid">
+                    <img src="images/new_profile.jpeg" alt="Milan Gabriel">
+                    <div class="polaroid-caption">Remote &middot; EU / UK / US</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
-            <section class="section">
-                <h2 class="section-title">Experience</h2>
-                <div class="cards">
-                    <div class="card">
-                        <h3 class="card-title">B&S Group</h3>
-                        <p class="card-subtitle">Team Leader — Tenders & Pricing (2016 - Present | 9 years)</p>
-                        <div class="card-content">
+    <!-- Core Skills -->
+    <section class="section" id="skills">
+        <div class="container">
+            <h2 class="section-title">Core Skills</h2>
+            <div class="kpi-grid">
+                <div class="kpi-card skill-card">
+                    <dl>
+                        <dt>Architecture</dt>
+                        <dd>Cloud data platform design, Lakehouse (Medallion) architecture, Kimball dimensional modeling, data governance &amp; access control</dd>
+                    </dl>
+                </div>
+                <div class="kpi-card skill-card">
+                    <dl>
+                        <dt>Languages</dt>
+                        <dd>Python, SQL, PySpark</dd>
+                        <dt style="margin-top: 0.75rem;">Platforms</dt>
+                        <dd>Apache Spark, Databricks, Delta Lake, AWS (Glue, S3, Redshift), Azure Data Factory</dd>
+                    </dl>
+                </div>
+                <div class="kpi-card skill-card">
+                    <dl>
+                        <dt>Delivery</dt>
+                        <dd>Batch &amp; streaming-oriented ETL/ELT, schema validation and drift control, CI-friendly pipeline design</dd>
+                        <dt style="margin-top: 0.75rem;">Reporting Layer</dt>
+                        <dd>Power BI, Tableau, Streamlit</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-grid">
+
+                <div class="ticket">
+                    <div class="ticket-top">
+                        <span class="ticket-badge active">Current</span>
+                        <h3>Data Engineer — Sole Architect &amp; DE</h3>
+                        <div class="job-meta">
+                            <span class="job-org">Team Computers, embedded at a Speciality Chemical manufacturing enterprise</span>
+                            <span class="job-dates">Apr 2026 – Present</span>
+                        </div>
+                    </div>
+                    <div class="ticket-bottom">
+                        <div class="project-content-block" style="margin-bottom: 0;">
                             <ul>
-                                <li>Built and maintained dynamic Power BI dashboards to monitor SKU-level pricing across international markets.</li>
-                                <li>Automated data processes using Excel and Power Automate, saving hours of manual reporting.</li>
-                                <li>Led a cross-functional team through multiple high-stakes tender projects with time-bound execution.</li>
-                                <li>Trained new staff to handle increased workload efficiently even with low headcount.</li>
-                                <li>Developed tools and reports that were adopted across departments for broader business use.</li>
+                                <li>Sole technical owner of the client's AWS data architecture: set direction, design pipelines, and implement them personally with no engineering team behind</li>
+                                <li>Design the target-state Lakehouse (Bronze/Silver/Gold on S3) and dimensional models for Sales, Procurement, Finance, and Operations, treating each domain as a governed data product rather than a one-off extract</li>
+                                <li>Build ETL/ELT pipelines in Python, SQL, and PySpark against multi-million-row datasets, with schema validation and drift controls built in from the start</li>
+                                <li>Automated recurring analytics workflows, cutting manual turnaround from days to minutes, while holding the reliability the business runs its daily decisions on</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-            </section>
 
-            <section class="section">
-                <h2 class="section-title">Skills & Tools</h2>
-            <div class="cards">
-                <div class="card">
-                    <h3 class="card-title">Technical Skills</h3>
-                    <div class="card-content">
-                        <div class="skills">
-                            <span class="skill">Power BI</span>
-                            <span class="skill">DAX</span>
-                            <span class="skill">Excel</span>
-                            <span class="skill">VBA</span>
-                            <span class="skill">SQL</span>
-                            <span class="skill">Data Modeling</span>
-                            <span class="skill">Automation</span>
-                            <span class="skill">Data Transformation</span>
-                            <span class="skill">Relational Databases</span>
+                <div class="ticket">
+                    <div class="ticket-top">
+                        <span class="ticket-badge roadmap">Prior Role</span>
+                        <h3>Senior Team Lead — Data Engineering</h3>
+                        <div class="job-meta">
+                            <span class="job-org">B&amp;S Group (Gowrie Healthcare Pvt. Ltd.), India — international stakeholders</span>
+                            <span class="job-dates">Aug 2016 – Mar 2026</span>
+                        </div>
+                    </div>
+                    <div class="ticket-bottom">
+                        <div class="project-content-block" style="margin-bottom: 0;">
+                            <ul>
+                                <li>Owned end-to-end data architecture and pipeline delivery in Python, SQL, and Databricks for Sales, Procurement, Finance, and Operations, working directly with business stakeholders to turn ambiguous requirements into scalable data models</li>
+                                <li>Designed and implemented medallion-architecture Lakehouse pipelines over multi-million-row datasets, and integrated Databricks outputs with Power BI for self-service analytics with role-based access</li>
+                                <li>Built quality controls and schema validation into every pipeline to prevent data drift and keep downstream reporting reliable</li>
+                                <li>Automated reporting and analytics workflows, cutting manual effort from days to minutes</li>
+                                <li>Led a team of 10 analysts, setting the technical direction and driving adoption of Python and SQL engineering practices across the group</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                
-                <div class="card">
-                    <h3 class="card-title">Leadership & Management</h3>
-                    <div class="card-content">
-                        <div class="skills">
-                            <span class="skill">Team Leadership</span>
-                            <span class="skill">Mentoring</span>
-                            <span class="skill">Training</span>
-                            <span class="skill">Pricing Models</span>
-                            <span class="skill">Tender Strategy</span>
-                            <span class="skill">Operational Automation</span>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture & Data Product Projects -->
+    <section class="section" id="projects">
+        <div class="container">
+            <h2 class="section-title">Architecture &amp; Data Product Projects</h2>
+
+            <div class="featured-projects-grid">
+
+                <div class="featured-project">
+                    <div>
+                        <span class="project-tag">Flagship Architecture</span>
+                        <h3>End-to-End Airport Commercial Analytics</h3>
+
+                        <div class="project-content-block">
+                            <h4>The Business Problem</h4>
+                            <p>Commercial teams depended on legacy weekly tracking extractions, leaving terminal asset operators blind to performance drops and delaying critical inventory or retail changes by 7+ days.</p>
                         </div>
+
+                        <div class="project-content-block">
+                            <h4>The Technical Blueprint</h4>
+                            <ul>
+                                <li>Automated ingest streams from source systems using AWS Glue.</li>
+                                <li>Engineered multi-tier Bronze/Silver/Gold S3 Lakehouse architecture.</li>
+                                <li>Applied strict Kimball dimensional modeling via Databricks (PySpark).</li>
+                                <li>Exposed optimized analytical query layers inside Amazon Redshift.</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-content-block">
+                            <h4>The Operational Outcome</h4>
+                            <p>Reduced analytical reporting latency from a full week down to a predictable, daily iteration cycle while preserving 99%+ production pipeline runtime reliability.</p>
+                        </div>
+                    </div>
+
+                    <div class="project-footer">
+                        <a href="https://github.com/the1onwrongway/sfo-de-project" class="btn-sm project-btn" target="_blank"><i class="fab fa-github"></i> Repository</a>
+                        <div class="tech-line">AWS Glue &bull; Databricks &bull; PySpark &bull; Amazon S3 &bull; Amazon Redshift &bull; Power BI</div>
                     </div>
                 </div>
-                
-                <div class="card">
-                    <h3 class="card-title">Soft Skills</h3>
-                    <div class="card-content">
-                        <div class="skills">
-                            <span class="skill">Perseverance</span>
-                            <span class="skill">Adaptability</span>
-                            <span class="skill">Communication</span>
-                            <span class="skill">Problem Solving</span>
-                            <span class="skill">Strategic Thinking</span>
+
+                <div class="featured-project">
+                    <div>
+                        <span class="project-tag">Flagship Architecture</span>
+                        <h3>SatyadarshI | Space Data Pipeline</h3>
+
+                        <div class="project-content-block">
+                            <h4>The Business Problem</h4>
+                            <p>Manually tracking regional agricultural anomalies at scale requires handling irregular geospatial metadata layers and massive datasets, resulting in severe verification delays for critical field evaluations.</p>
+                        </div>
+
+                        <div class="project-content-block">
+                            <h4>The Technical Blueprint</h4>
+                            <ul>
+                                <li>Engineered cloud assets to ingest earth observation spatial parameters.</li>
+                                <li>Automated Sentinel-2 satellite imagery retrieval pipelines.</li>
+                                <li>Computed remote sensing NDVI vegetation indexes programmatically.</li>
+                                <li>Optimized analytical storage structures to accelerate vector query math.</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-content-block">
+                            <h4>The Operational Outcome</h4>
+                            <p>Delivered an automated verification pipeline that completely removes manual processing friction, delivering crisp map analytics layers on demand.</p>
                         </div>
                     </div>
+
+                    <div class="project-footer">
+                        <a href="https://satyadarshi.streamlit.app/" class="btn-sm project-btn" target="_blank"><i class="fas fa-external-link-alt"></i> Live App</a>
+                        <div class="tech-line">DuckDB &bull; Streamlit &bull; Python &bull; Sentinel API &bull; Geospatial Processing</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Leadership & Credentials -->
+    <section class="section" id="credentials">
+        <div class="container">
+            <h2 class="section-title">Community Leadership &amp; Credentials</h2>
+            <div class="kpi-grid">
+                <div class="kpi-card">
+                    <div>
+                        <h3>Databricks Hackathons</h3>
+                        <span class="role">Architectural Evaluator &amp; Designer</span>
+                        <p>Designed data pipeline and AI challenges and evaluated end-to-end architectures at Databricks-sponsored events, with MITB ACM and Indian Data Club.</p>
+                    </div>
+                    <a href="https://www.linkedin.com/posts/milan-gabriel_databricks-hackbricks-was-a-good-one-designed-ugcPost-7449307838440681472-Tor9/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAChg8HsBgSYSzPA4YQ6b8W2hwf8VtV3UcvI" class="metric" target="_blank">100+ Teams Evaluated <i class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="kpi-card">
+                    <div>
+                        <h3>GDG Lucknow APL</h3>
+                        <span class="role">APL Hackathon Mentor</span>
+                        <p>Mentored developers and engineering cohorts on multi-agent systems, orchestration workflows, and vector database engineering strategies.</p>
+                    </div>
+                    <a href="https://www.linkedin.com/posts/apl-mentors-ugcPost-7466728057144422400-Nzoi/?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAACqRTzQBVZYgYtUFxbwAzobT00Jn8B7p04c&utm_campaign=copy_link" class="metric" target="_blank">Agentic AI Specialization <i class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="kpi-card">
+                    <div>
+                        <h3>Indian Data Club (IDC)</h3>
+                        <span class="role">Technical &amp; Support Lead</span>
+                        <p>Manage infrastructure logic, community data challenges, and foundational training delivery pipelines for the ecosystem.</p>
+                    </div>
+                    <a href="https://www.linkedin.com/posts/milan-gabriel_received-appreciation-from-indian-data-share-7447924666641461248-72pK/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAChg8HsBgSYSzPA4YQ6b8W2hwf8VtV3UcvI" class="metric" target="_blank">Core Team Lead <i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
         </div>
+    </section>
 
-        <section class="section">
-            <h2 class="section-title">Projects</h2>
-            <div class="cards">
-                <div class="card project-card">
-                    <h3 class="card-title">GabMetrix</h3>
-                    <p class="card-subtitle">Sports Analytics Platform</p>
-                    <div class="card-content">
-                        <p>A sports analytics side-hustle in pilot phase with a leading cricket academy that focuses on breaking down player and match data into actionable insights. Future roadmap includes video analysis and real-time AI-driven suggestions.</p>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://gabmetrix.github.io/" target="_blank">Visit Project</a>
-                    </div>
-                </div>
-                
-                <div class="card project-card">
-                    <h3 class="card-title">AI in Sales</h3>
-                    <p class="card-subtitle">Strategy Brief</p>
-                    <div class="card-content">
-                        <p>Exploring how AI can enhance sales in the consumer goods sector through demand forecasting and customer segmentation.</p>
-                    </div>
-                    <div class="project-links">
-                        <a href="/Case Study/AI-in-Retail-sales.html" target="_blank">Visit Project</a>
-                    </div>
-                </div>
-                
-                <div class="card project-card">
-                    <h3 class="card-title">IPL 2024 Predictions</h3>
-                    <p class="card-subtitle">Predictive Analytics</p>
-                    <div class="card-content">
-                        <p>Data-driven analysis and outcome prediction models for the Indian Premier League, using team and player statistics.</p>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://bit.ly/milan_IPL_YT" target="_blank">Visit Project</a>
-                    </div>
-                </div>
-                
-                <div class="card project-card">
-                    <h3 class="card-title">Telangana Economic Analysis</h3>
-                    <p class="card-subtitle">Data Exploration</p>
-                    <div class="card-content">
-                        <p>An exploration of the state's economic indicators with actionable insights backed by open data.</p>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://bit.ly/telangana_project" target="_blank">Visit Project</a>
-                    </div>
-                </div>
-                
-                <div class="card project-card">
-                    <h3 class="card-title">Loan Default Probability Model</h3>
-                    <p class="card-subtitle">Predictive Model</p>
-                    <div class="card-content">
-                        <p>Built a predictive model to assess risk of default, useful for financial institutions.</p>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://www.kaggle.com/code/milangabriel/loan-default-probability-prediction" target="_blank">Visit Project</a>
-                    </div>
-                </div>
-                
-                <div class="card project-card">
-                    <h3 class="card-title">Customer Churn Prediction</h3>
-                    <p class="card-subtitle">Machine Learning</p>
-                    <div class="card-content">
-                        <p>Machine learning project to analyze churn behavior and develop actionable business strategies.</p>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://bit.ly/milan_IPL_YT" target="_blank">Visit Project</a>
-                    </div>
-                </div>
-                
-                <div class="card project-card">
-                    <h3 class="card-title">London Housing Data Analysis</h3>
-                    <p class="card-subtitle">Market Research</p>
-                    <div class="card-content">
-                        <p>Investigated housing market trends using real-world data to uncover pricing patterns and influencing factors.</p>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://www.kaggle.com/code/milangabriel/london-housing-data-analysis" target="_blank">Visit Project</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2 class="section-title">Certifications</h2>
-            <div class="certifications">
-                <div class="certification">
-                    <h4>Google Data Analytics</h4>
-                    <p>Google</p>
-                </div>
-                <div class="certification">
-                    <h4>Advanced Excel</h4>
-                    <p>LinkedIn Learning</p>
-                </div>
-                <div class="certification">
-                    <h4>Power BI for Beginners</h4>
-                    <p>LinkedIn Learning</p>
-                </div>
-                <div class="certification">
-                    <h4>Python for Data Science</h4>
-                    <p>Great Learning</p>
-                </div>
-                <div class="certification">
-                    <h4>Tableau Training</h4>
-                    <p>Simplilearn</p>
-                </div>
-                <div class="certification">
-                    <h4>Data Visualization with Tableau</h4>
-                    <p>Coursera</p>
-                </div>
-                <div class="certification">
-                    <h4>Data Analysis with Python</h4>
-                    <p>Coursera</p>
-                </div>
-                <div class="certification">
-                    <h4>Machine Learning with Python</h4>
-                    <p>Great Learning</p>
-                </div>
-                <div class="certification">
-                    <h4>Data Science Foundations</h4>
-                    <p>Great Learning</p>
-                </div>
-                <div class="certification">
-                    <h4>Data Science Methodology</h4>
-                    <p>Coursera</p>
-                </div>
-                <div class="certification">
-                    <h4>Statistics for Data Science</h4>
-                    <p>Coursera</p>
-                </div>
-                <div class="certification">
-                    <h4>Introduction to Databases</h4>
-                    <p>Coursera</p>
-                </div>
-                <div class="certification">
-                    <h4>SQL for Data Analysis</h4>
-                    <p>Great Learning</p>
-                </div>
-                <div class="certification">
-                    <h4>Product Management Fundamentals</h4>
-                    <p>Dezkr</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2 class="section-title">Strengths</h2>
-            <div class="cards">
-                <div class="card">
-                    <div class="card-content">
-                        <ul>
-                            <li>Thrives in fast-paced, data-intensive environments</li>
-                            <li>Perseverance—so core to my character, I had it tattooed</li>
-                            <li>Passionate about using data to drive clarity, not complexity</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
+    <!-- Education -->
+    <section class="section" id="education">
         <div class="container">
-            <div class="footer-content">
-                <p>Let's connect and discuss how data can transform your business decisions.</p>
-                <div class="contact-info">
-                    <a href="mailto:milangabrielmacwan@gmail.com">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
-                        </svg>
-                        milangabrielmacwan@gmail.com
-                    </a>
+            <h2 class="section-title">Education</h2>
+            <div class="kpi-card edu-card">
+                <div>
+                    <h3>Diploma in Mechanical Engineering</h3>
+                    <span class="role">Gujarat Technological University</span>
                 </div>
-                <div class="social-links">
-                    <a href="https://linkedin.com/in/milan-gabriel" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
-                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-                        </svg>
-                    </a>
-                    <a href="https://the1onwrongway.github.io/" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
-                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                        </svg>
-                    </a>
-                    <a href="https://gabmetrix.github.io/" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
-                            <path d="M2 10h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1zm9-9h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zm0 9h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1zM2 1h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
-                        </svg>
-                    </a>
-                </div>
-                <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.8;">© 2025 Milan Gabriel. All rights reserved.</p>
+                <span class="edu-dates">2011 – 2014</span>
             </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-buttons-container">
+                <a href="Files/Milan_Gabriel_Data_Engineer.pdf" class="btn" target="_blank">
+                    <i class="far fa-file-pdf"></i> Download PDF
+                </a>
+                <a href="https://github.com/the1onwrongway" class="btn" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://linkedin.com/in/milan-gabriel" class="btn" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="mailto:milangabrielmacwan@gmail.com" class="btn">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer-bottom">
+        <div class="container">
+            <p class="copyright">&copy; 2026 Milan Gabriel. Engineered cleanly with structural architectural focus.</p>
         </div>
     </footer>
+
+    <!-- JavaScript Navigation Tracking -->
+    <script src="script.js"></script>
 </body>
+</html>
